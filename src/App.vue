@@ -41,8 +41,11 @@
       {{ mixlrId }}
       {{ titlePrefix }}
       {{ showDebug }}
-      <div v-for="e in loggedEventTypes" v-bind:key="e.index">
-        {{ e }}
+      <div
+        v-for="loggedEventType in loggedEventTypes"
+        v-bind:key="loggedEventType.index"
+      >
+        {{ loggedEventType }}
       </div>
     </div>
   </div>
